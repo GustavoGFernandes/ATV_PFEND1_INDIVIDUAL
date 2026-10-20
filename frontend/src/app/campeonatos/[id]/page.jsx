@@ -68,7 +68,7 @@ export default function DetalhesCampeonatoPage() {
     <div className="mx-auto pagina-estreita">
       <Link href="/campeonatos" className="small text-body-secondary text-decoration-none link-voltar">← Voltar para campeonatos</Link>
 
-      <div className="card mt-3 card-detalhes-campeonato" style={{ "--cor-jogo": info?.cor }}>
+      <div className="card mt-3 card-detalhes-campeonato" style={{ borderLeftColor: info?.cor }}>
         <div className="card-body p-3 p-md-4">
           <div className="d-flex flex-wrap gap-2 mb-2 selos-detalhes">
             <SeloJogo jogo={campeonato.jogo} />

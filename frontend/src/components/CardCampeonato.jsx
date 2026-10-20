@@ -7,7 +7,7 @@ export default function CardCampeonato({ campeonato, onExcluir }) {
   const cor = JOGOS[campeonato.jogo]?.cor || "#888";
 
   return (
-    <div className="card h-100 card-campeonato" style={{ "--cor-jogo": cor }}>
+    <div className="card h-100 card-campeonato" style={{ borderLeftColor: cor }}>
       <div className="card-body d-flex flex-column">
         <div className="d-flex justify-content-between align-items-start gap-2 mb-2 topo-card-campeonato">
           <SeloJogo jogo={campeonato.jogo} />

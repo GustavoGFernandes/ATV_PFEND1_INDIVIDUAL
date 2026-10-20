@@ -23,7 +23,7 @@ export function ProvedorMensagens({ children }) {
   return (
     <MensagensContext.Provider value={mostrar}>
       {children}
-      <div className="area-mensagens" aria-live="polite">
+      <div className="toast-container position-fixed top-0 end-0 p-3 mt-5 area-mensagens" aria-live="polite">
         {mensagens.map((m) => (
           <div
             key={m.id}

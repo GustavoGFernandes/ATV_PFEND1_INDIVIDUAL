@@ -78,10 +78,10 @@ export default function Painel() {
                 <Link
                   href={`/campeonatos?jogo=${encodeURIComponent(jogo)}`}
                   className="card h-100 text-decoration-none card-jogo"
-                  style={{ "--cor-jogo": info.cor }}
+                  style={{ borderTopColor: info.cor }}
                 >
                   <div className="card-body">
-                    <div className="font-monospace fw-bold fs-4 sigla-jogo">{info.sigla}</div>
+                    <div className="font-monospace fw-bold fs-4 sigla-jogo" style={{ color: info.cor }}>{info.sigla}</div>
                     <div className="fw-semibold nome-jogo">{jogo}</div>
                     <div className="small text-body-secondary quantidade-jogo">
                       {campeonatos.filter((c) => c.jogo === jogo).length} campeonato(s)
