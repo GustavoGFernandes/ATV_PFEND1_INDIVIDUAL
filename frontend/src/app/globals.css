@@ -14,6 +14,10 @@ body {
   font-weight: bold;
 }
 
+.barra-navegacao .link-navegacao:hover {
+  color: #ff4655;
+}
+
 .botao-destaque:hover {
   background-color: #ff6470;
   border-color: #ff6470;
@@ -44,16 +48,22 @@ body {
   background-color: #1f1418;
 }
 
+.card-estatistica {
+  transition: border-color 0.15s;
+}
+
 .card-estatistica:hover {
   border-color: #ff4655;
 }
 
 .card-jogo {
   border-top: 3px solid;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .card-jogo:hover {
-  background-color: #2b3038;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 70, 85, 0.25);
 }
 
 .selo-jogo {
@@ -67,8 +77,12 @@ body {
   border-left: 4px solid;
 }
 
+.card-campeonato {
+  transition: transform 0.15s;
+}
+
 .card-campeonato:hover {
-  background-color: #2b3038;
+  transform: translateY(-2px);
 }
 
 .texto-descricao {
